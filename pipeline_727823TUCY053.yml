@@ -1,0 +1,18 @@
+project_name: "RFIDNFCSecurityTester_727823TUCY053"
+roll_number: "727823TUCY053"
+student_name: "YOUR FULL NAME"
+version: "1.0"
+date: "2025-01-28"
+
+stages:
+  - name: setup
+    script: code/setup_lab.py
+    description: "Install dependencies and verify lab environment"
+
+  - name: run_tool
+    script: code/run_tool.py
+    description: "Execute RFID/NFC security scanner with 3 test cases"
+
+  - name: analyze
+    script: code/analyze_results.py
+    description: "Analyze scan output and generate risk report"
